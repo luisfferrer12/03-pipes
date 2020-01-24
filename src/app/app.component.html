@@ -82,6 +82,42 @@
                 <td> currency 'CLP' </td>
                 <td> {{ val | currency:'CLP'}} </td>
             </tr>
+
+            <tr>
+                <td> {{vlorDePromesa}} </td>
+                <td> asycn </td>
+                <td> {{ vlorDePromesa | async}} </td>
+            </tr>
+
+            <tr>
+                <td> {{fecha}} </td>
+                <td> date </td>
+                <td> {{ fecha | date}} </td>
+            </tr>
+
+            <tr>
+                <td> {{fecha}} </td>
+                <td> date:'medium' </td>
+                <td> {{ fecha | date:'medium'}} </td>
+            </tr>
+
+            <tr>
+                <td> {{fecha}} </td>
+                <td> date:'MMMM - dd' </td>
+                <td> {{ fecha | date:'MMMM - dd'}} </td>
+            </tr>
+
+            <tr>
+                <td> {{nombre2}} </td>
+                <td> Capitalizado </td>
+                <td> {{ nombre2 | Capitalizado }} </td>
+            </tr>
+
+            <tr>
+                <td> {{nombre2}} </td>
+                <td> Capitalizado </td>
+                <td> {{ nombre2 | Capitalizado:false }} </td>
+            </tr>
         </tbody>
     </table>
 

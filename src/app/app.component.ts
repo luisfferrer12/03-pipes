@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  nombre = "Felipe";
+  nombre = 'Felipe';
+
+  nombre2 = 'LuiS FeliPe FeRRer DelGadO';
 
   arreglo = [1,2,3,4,5,6,7,8,9,10,11];
 
@@ -25,4 +27,10 @@ export class AppComponent {
       casa: 116
     }
   };
+
+  vlorDePromesa = new Promise( (resolve, reject) => {
+    setTimeout( () => resolve('Llegó la data!'), 3500);
+  });
+
+  fecha = new Date();
 }
